@@ -33,8 +33,8 @@ def sendThingsSpeak(temperature, pressure, humidity):
     payload = {
         'api_key': TS_API_KEY,
         'field1': temperature,
-				'field2': pressure,        
-				'field3': humidity
+	'field2': pressure,        
+	'field3': humidity
     }
     response = requests.post(TS_URL, data=payload)
     if response.status_code == 200:
